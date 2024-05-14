@@ -9,6 +9,7 @@ class Post(BaseModel):
     author_id: str
     created_at: datetime = datetime.now()
     updated_at: datetime = datetime.now()
+    like_count: int = 0
     
 class PostUpdate(BaseModel):
     title: str = Field(None, title="Updated Title")
